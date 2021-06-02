@@ -1,0 +1,8 @@
+# Kafka initial (I have tried to run it couple of times with variation. The below one is worked. There was an error for network)
+- docker-compose -f common.yml -f kafka_cluster.yml up
+# (There was a lot of issue and I have put here the working example of kafka. There was a need of restart of some brokers)
+
+
+# kafkacat
+- brew install kafkacat
+- kafkacat -L -b localhost:19092
