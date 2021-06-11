@@ -6,3 +6,4 @@
 # kafkacat
 - brew install kafkacat
 - kafkacat -L -b localhost:19092
+- kafkacat -C -b localhost:19092 -t twitter-topic

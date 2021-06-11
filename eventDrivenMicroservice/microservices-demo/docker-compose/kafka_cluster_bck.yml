@@ -1,7 +1,7 @@
 version: '3'
 services:
   zookeeper:
-    image: kymeric/cp-zookeeper
+    image: confluentinc/cp-zookeeper:latest
     hostname: zookeeper
     container_name: zookeeper
     ports:
@@ -17,7 +17,7 @@ services:
     networks:
       - ${GLOBAL_NETWORK:-kafka}
   kafka-broker-1:
-    image: kymeric/cp-kafka
+    image: confluentinc/cp-kafka:latest
     hostname: kafka-broker-1
     container_name: kafka-broker-1
     ports:
@@ -38,7 +38,7 @@ services:
     networks:
       - ${GLOBAL_NETWORK:-kafka}
   kafka-broker-2:
-    image: kymeric/cp-kafka
+    image: confluentinc/cp-kafka:latest
     hostname: kafka-broker-2
     container_name: kafka-broker-2
     ports:
@@ -59,7 +59,7 @@ services:
     networks:
       - ${GLOBAL_NETWORK:-kafka}
   kafka-broker-3:
-    image: kymeric/cp-kafka
+    image: confluentinc/cp-kafka:latest
     hostname: kafka-broker-3
     container_name: kafka-broker-3
     ports:
@@ -80,7 +80,7 @@ services:
     networks:
       - ${GLOBAL_NETWORK:-kafka}
   schema-registry:
-    image: eugenetea/schema-registry-arm64:latest
+    image: confluentinc/cp-schema-registry:latest
     hostname: schema-registry
     container_name: schema-registry
     depends_on:
