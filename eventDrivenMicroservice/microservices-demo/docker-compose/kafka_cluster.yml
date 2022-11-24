@@ -15,11 +15,12 @@ services:
       - ZOOKEEPER_SYNC_LIMIT=2
       - ZOOKEEPER_SERVERS= zookeeper:2888:3888
     networks:
-      - ${GLOBAL_NETWORK:-kafka}
+      - application-kafka
   kafka-broker-1:
     image: kymeric/cp-kafka
     hostname: kafka-broker-1
     container_name: kafka-broker-1
+    restart: always
     ports:
       - 19092:19092
     expose:
@@ -36,11 +37,12 @@ services:
     depends_on:
       - zookeeper
     networks:
-      - ${GLOBAL_NETWORK:-kafka}
+      - application-kafka
   kafka-broker-2:
     image: kymeric/cp-kafka
     hostname: kafka-broker-2
     container_name: kafka-broker-2
+    restart: always
     ports:
       - 29092:29092
     expose:
@@ -57,11 +59,12 @@ services:
     depends_on:
       - zookeeper
     networks:
-      - ${GLOBAL_NETWORK:-kafka}
+      - application-kafka
   kafka-broker-3:
     image: kymeric/cp-kafka
     hostname: kafka-broker-3
     container_name: kafka-broker-3
+    restart: always
     ports:
       - 39092:39092
     expose:
@@ -78,7 +81,7 @@ services:
     depends_on:
       - zookeeper
     networks:
-      - ${GLOBAL_NETWORK:-kafka}
+      - application-kafka
   schema-registry:
     image: eugenetea/schema-registry-arm64:latest
     hostname: schema-registry
@@ -96,4 +99,4 @@ services:
       - SCHEMA_REGISTRY_LISTENERS=http://schema-registry:8085
       - SCHEMA_REGISTRY_DEBUG=true
     networks:
-      - ${GLOBAL_NETWORK:-kafka}
+      - application-kafka

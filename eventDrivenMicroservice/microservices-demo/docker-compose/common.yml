@@ -1,6 +1,11 @@
 version: '3.7'
 
 networks:
-  application:
+  application-kafka:
     driver: bridge
     name: application-kafka
+    external: true
+  application-services:
+    driver: bridge
+    name: application-services
+    external: true
