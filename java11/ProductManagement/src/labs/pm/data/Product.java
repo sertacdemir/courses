@@ -27,36 +27,60 @@ public class Product {
     private int id;
     private String name;
     private BigDecimal price;
+    private Rating rating;
+
+    public Product(int id, String name, BigDecimal price, Rating rating) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.rating = rating;
+    }
+    public Product(int id, String name, BigDecimal price) {
+        this(id, name, price, Rating.NOT_RATED);
+    }
+
+    public Product(){
+        this(0,"no name", BigDecimal.ZERO);
+    }
 
     public int getId() {
         return id;
     }
 
-    public void setId(final int id) {
-        this.id = id;
-    }
+    // to make object immutable
+//    public void setId(final int id) {
+//        this.id = id;
+//    }
 
     public String getName() {
         return name;
     }
 
-    public void setName(final String name) {
-        this.name = name;
-    }
+//    public void setName(final String name) {
+//        this.name = name;
+//    }
 
     public BigDecimal getPrice() {
         return price;
     }
 
-    public void setPrice(final BigDecimal price) {
-        this.price = price;
+//    public void setPrice(final BigDecimal price) {
+//        this.price = price;
+//    }
+
+    public Rating getRating() {
+        return rating;
     }
 
     /**
-     * Calculates discount based on a product price and {@link DISCOUNT_RATE discount rate}
+     * Calculates discount based on a product price and {@link BigDecimal discount rate}
      * @return a {@link java.math.BigDecimal BigDecimal} value of the discount
      */
     public BigDecimal getDiscount(){
         return price.multiply(DISCOUNT_RATE).setScale(2, RoundingMode.HALF_UP);
+    }
+
+    public Product applyRating(Rating newRating){
+        return new Product(this.id, this.name, this.price, newRating);
     }
 }
