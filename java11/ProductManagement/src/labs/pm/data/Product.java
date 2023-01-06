@@ -19,7 +19,7 @@ import java.util.Objects;
  * <br>
  * Each Product has an id, name and price and calculated discount
  */
-public abstract class Product {
+public abstract class Product implements Rateable<Product>{
     /**
      * A constant that defines a {@link java.math.BigDecimal BigDecimal} value of the discount rate
      * <br>
@@ -70,6 +70,7 @@ public abstract class Product {
 //        this.price = price;
 //    }
 
+    @Override
     public Rating getRating() {
         return rating;
     }
@@ -90,7 +91,7 @@ public abstract class Product {
         return LocalDate.now();
     }
 
-    public abstract Product applyRating(Rating newRating);
+//    public abstract Product applyRating(Rating newRating);
 //    {
 //        return new Product(this.id, this.name, this.price, newRating);
 //    }
