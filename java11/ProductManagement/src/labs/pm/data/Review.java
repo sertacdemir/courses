@@ -7,12 +7,14 @@
 
 package labs.pm.data;
 
+import java.io.Serializable;
+
 /**
  * @author sertacdemir
  * @version 1.0
  * @project ProductManagement
  */
-public class Review implements Comparable<Review>{
+public class Review implements Comparable<Review>, Serializable {
     private Rating rating;
     private String comments;
 
