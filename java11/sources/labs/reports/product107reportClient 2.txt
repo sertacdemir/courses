@@ -1,0 +1,5 @@
+Pizza, Price: £7.50, Rating: ★★☆☆☆, Best Before: 19/03/2022
+Review: ★★★★☆	Yet another review
+Review: ★★☆☆☆	Tso bad!
+Review: ★☆☆☆☆	disappointment 107
+Review: ★☆☆☆☆	noo 107

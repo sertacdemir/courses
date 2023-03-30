@@ -1,0 +1,5 @@
+Bier, Price: ￥2.50, Rating: ★★★★☆, Best Before: 2023/3/30
+Review: ★★★★☆	This cake is good!
+Review: ★★★★☆	Yet another review
+Review: ★★★☆☆	It's good 108
+Review: ★★★☆☆	OK 108
