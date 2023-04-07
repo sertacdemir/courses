@@ -1,5 +1,0 @@
-wine, Price: 3,99 €, Rating: ★★★★☆, Best Before: 30/03/2023
-Review: ★★★★☆	good one! 110
-Review: ★★★★☆	Very nice 110
-Review: ★★★★☆	Yet another review
-Review: ★★★☆☆	Okeyish!

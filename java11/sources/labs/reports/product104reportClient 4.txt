@@ -1,5 +1,6 @@
-Herbal Tea, Fiyat: ₺1,25, Degerlendirme: ★★★☆☆, Son kullanma tarihi: 30.03.2023
-Yorum: ★★★★☆	Yet another review
-Yorum: ★★★☆☆	OK!
-Yorum: ★★☆☆☆	ehhh
-Yorum: ★☆☆☆☆	Not good 104
+Herbal Tea, Price: $1.25, Rating: ★★★☆☆, Best Before: 4/7/23
+Review: ★★★★☆	Yet another review
+Review: ★★★☆☆	OK!
+Review: ★★☆☆☆	ehhh
+Review: ★☆☆☆☆	Not good 104
+☆	Not good 104

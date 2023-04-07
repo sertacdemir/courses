@@ -1,4 +1,5 @@
-Herbal Tea, Price: 1,25 €, Rating: ★★★☆☆, Best Before: 30/03/2023
+Herbal Tea, Price: $1.25, Rating: ★★★☆☆, Best Before: 4/7/23
+03/2023
 Review: ★★★★☆	Yet another review
 Review: ★★★☆☆	OK!
 Review: ★★☆☆☆	ehhh
